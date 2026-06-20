@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.Collections;
+class CollectionsDemo {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(45);
+        list.add(12);
+        list.add(78);
+        list.add(23);
+        list.add(56);
+        System.out.println("Original List: " + list);
+        Collections.sort(list);
+        System.out.println("Ascending Order: " + list);
+        Collections.sort(list, Collections.reverseOrder());
+        System.out.println("Descending Order: " + list);
+        int min = Collections.min(list);
+        int max = Collections.max(list);
+        System.out.println("Minimum Element: " + min);
+        System.out.println("Maximum Element: " + max);
+    }
+}
